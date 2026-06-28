@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Eventos - Ponentes</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<div class="container">
+
+    <h1>Gestión de Eventos</h1>
+
+    <div class="card">
+
+        <h2>Registrar Evento</h2>
+
+        <form id="formEvento">
+
+            <input type="text" id="nombre" placeholder="Nombre evento">
+            <small class="error" id="errorNombre"></small>
+
+            <input type="text" id="tipo" placeholder="Tipo">
+            <small class="error" id="errorTipo"></small>
+
+            <input type="date" id="fecha">
+            <small class="error" id="errorFecha"></small>
+
+            <input type="number" id="capacidad" placeholder="Capacidad">
+            <small class="error" id="errorCapacidad"></small>
+
+            <input type="number" id="ponenteId" placeholder="ID Ponente">
+            <small class="error" id="errorPonente"></small>
+
+            <button type="submit">Guardar Evento</button>
+
+        </form>
+    </div>
+
+    <div class="card">
+        <h2>Lista de Eventos</h2>
+        <div id="lista"></div>
+    </div>
+
+</div>
+
+<script src="script.js"></script>
+
+</body>
+</html>
